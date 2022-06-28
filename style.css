@@ -359,11 +359,13 @@ body{
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: "Roboto-Black", "Sans serif";
+  font-family: Roboto, "Sans serif";
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 font-size: 24px;}
+button
+{display: inline-block;}
 .container
 {background-color: rgb(234, 234, 234);}
 
@@ -462,9 +464,19 @@ p.numerotation
     padding-right: 8px;
     border-radius: 50%;
     background-color: #9356DC;
+    color: white;
     float: left;
     margin-left: -44px;
   }
+  .card_restaurant
+  {
+  background-color: #fff;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
   .card_text_item
   {float: right;
   margin-top: -110px;
@@ -476,6 +488,8 @@ margin-right: 20px;}
 .first_starter, .second_starter, .third_starter, .first_main, .second_main, .third_main, .first_dessert, .second_dessert, .third_dessert
 { border-radius: 3px solid red; border-collapse: collapse; background-color: red; -webkit-border-radius: 3px solid red; -moz-border-radius: 3px solid red; -ms-border-radius: 3px solid red; -o-border-radius: 3px solid red;
 }
+table
+{background-color: #fff;}
 
 
 /*-----------------------------------footer---------------------------------------*/
@@ -490,5 +504,6 @@ footer img
   filter: invert(100%)}
 footer a, footer ul li
 {
-  color: #fff;}
+  color: #fff;
+line-height: 1.6;}
 
