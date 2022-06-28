@@ -348,13 +348,8 @@
     display: none;
   }
   
-body
-{width: 959px;
-}
-img
-{width: 959px;
-    height: auto;
-    object-fit: cover;}
+
+
 
 table
 {border: 3px solid yellow;
