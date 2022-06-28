@@ -364,6 +364,11 @@ body{
   margin: 0;
   padding: 0;
 font-size: 24px;}
+.container
+{background-color: rgb(234, 234, 234);}
+
+.fonctionnement
+{background-color: #fff;}
 li
 {
     list-style-type: none;}
@@ -383,16 +388,18 @@ ul
 h1, h2, h3
 {
   font-size: 30px;}
+  h2, h3
+  {text-align: left;}
   a 
 {
   text-decoration: none;
   color: black;}
-img
+.restaurant_presentation
 {
   object-fit: cover;
   width: 100%;
   border-radius: 25px 25px 0px 0px;
-  margin: 10px 10px 0px 10px;}
+  margin: 0 5px 0 5px;}
 
 
 .localisation
@@ -437,10 +444,16 @@ p.numerotation
   padding: Opx 10px;}
 .btn_menu_choice
 {
-  background-color: red;
+  background-color: rgb(246, 246, 246);
   width: 75%;
   padding: 20px 35px;
-  border-radius: 15px;}
+  border-radius: 25px;
+  border: none;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
   .restaurant
   {margin-bottom: 10px;}
   .number
@@ -448,19 +461,25 @@ p.numerotation
     padding-left: 8px;
     padding-right: 8px;
     border-radius: 50%;
-    background-color: purple;
+    background-color: #9356DC;
+    float: left;
+    margin-left: -44px;
   }
+  .card_text_item
+  {float: right;
+  margin-top: -110px;
+margin-right: 20px;}
   /*--------------------------Style menu des differentes cartes de restaurant--------------------
   -------------------------------------------------------------------------------------------------------
   -------------------------------------------------------------------------------------------*/
 
-.first_starter, .second_starter, .third_starter, .first_maine, .second_maine, .third_maine, .first_dessert, .second_dessert, .third_dessert
-{border: 3px solid yellow;
-border: 25px;}
+.first_starter, .second_starter, .third_starter, .first_main, .second_main, .third_main, .first_dessert, .second_dessert, .third_dessert
+{ border-radius: 3px solid red; border-collapse: collapse; background-color: red; -webkit-border-radius: 3px solid red; -moz-border-radius: 3px solid red; -ms-border-radius: 3px solid red; -o-border-radius: 3px solid red;
+}
 
 
 /*-----------------------------------footer---------------------------------------*/
-footer{
+.third_container{
     width: 100%;
     background-color: black;}
 footer img
