@@ -489,7 +489,7 @@ p.numerotation
   -------------------------------------------------------------------------------------------------------
   -------------------------------------------------------------------------------------------*/
 
-.first_starter, .second_starter, .third_starter, .fourth_starter, .first_main, .second_main,
+/*.first_starter, .second_starter, .third_starter, .fourth_starter, .first_main, .second_main,
  .third_main, .fourth_main, .first_dessert, .second_dessert, .third_dessert
 { 
   border-radius: 3px solid red;
@@ -499,10 +499,18 @@ p.numerotation
   -moz-border-radius: 3px solid red; 
   -ms-border-radius: 3px solid red;
   -o-border-radius: 3px solid red;
-}
+}*/
 table
 {
-  background-color: #fff;}
+  background-color: #fff;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 100%;
+  -webkit-border-radius:15px;
+  -moz-border-radius:15px;
+  -ms-border-radius:15px;
+  -o-border-radius:15px;
+}
   .starter
   {
   background-color: #fff;
