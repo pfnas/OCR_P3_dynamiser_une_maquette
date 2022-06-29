@@ -357,7 +357,7 @@ html
 {
   margin: 0 ;
   padding: 0 ;
-  max-width: 768px;}/*taille moyenne d'un mobile*/ 
+  }/*taille moyenne d'un mobile*/ 
 body{
   width: 100%;
   display: flex;
@@ -368,15 +368,17 @@ body{
   font-size: 24px;}
   img
   {object-fit: cover;
-  width: 100%;}
+  width: 100%;
+  max-height: 327px;}
 button
 {
   display: inline-block;}
-.container
+.main
 {
-  background-color: rgb(234, 234, 234);}
+  background-color: rgb(234, 234, 234);
+  padding-bottom: 50px;}
 
-.fonctionnement
+.fonctionnement, .logo_header
 {
   background-color: #fff;}
 li
@@ -387,13 +389,13 @@ ul
   padding: 0px 0px 0px 0px;}
 .btn
 {
+  width: 70%;
   background: linear-gradient(to top, #9356DC, #FF77DA);
   border-radius: 50px;
   font-size: 24px;
   margin-bottom: 50px;
-  padding: 25px 40px;
-  color: white;
-  white-space: nowrap;}
+  padding: 30px 90px;
+  color: white;}
   .store
   {color: #9356DC}
   
@@ -403,12 +405,26 @@ h1, h2, h3
   font-size: 30px;}
   h2, h3
   {
-    text-align: left;}
+    text-align: left;
+    padding-left: 20px;}
   a 
 {
   text-decoration: none;
   color: black;
 }
+.information
+{font-weight: 300;
+  padding-left: 20px;
+padding-bottom: 20px;}
+h2.presentation
+{margin-top: 50px;}
+.icone, .name
+{
+  padding-right: 55px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;}
 .restaurant_presentation
 {
   
@@ -421,6 +437,7 @@ h1, h2, h3
   justify-content: space-evenly;
   align-items: center;
 }
+
  .btn_recherche a
 {
   color: white}
@@ -431,7 +448,7 @@ header .container
   flex-direction: column;}
 .logo_header
 {
-  padding: 30px;
+  padding: 30px 0 10px 0;
   text-align: center;}
 .logo_header img
 {
@@ -439,7 +456,9 @@ header .container
 .localisation
 {
   background-color: rgb(234, 234, 234);
-  display: inline-block;}
+  display: inline-block;
+  border-top: 2px solid #d4d4d4;
+  padding: 20px 0;}
 .reservation
 {
   background-color: rgb(246, 246, 246);}
@@ -448,7 +467,7 @@ header .container
   background-color: green;}
 .button_menu ul li
 {
-  margin-bottom: 25px;}
+  margin-bottom: 45px;}
 
 p.numerotation
 {
@@ -458,11 +477,16 @@ p.numerotation
 .btn_menu_choice
 {
   background-color: rgb(246, 246, 246);
-  width: 75%;
-  padding: 30px 35px;
-  border-radius: 30px;
+  width: 85%;
+  padding: 45px 35px;
+  border-radius: 40px;
   border: none;
-  box-shadow: 0px 5px 13px 0px #B1AAAA;}
+  box-shadow: 0px 5px 13px 0px #B1AAAA;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+}
   .restaurant
   {
     margin-bottom: 10px;}
@@ -477,14 +501,16 @@ p.numerotation
     margin-left: -44px;
   }
   .card_restaurant
-  {
+  { 
     background-color: #fff;
-    border-radius: 25px;}
+    border-radius: 25px;
+  margin: 0 15px;}
   .card_text_item
   {
     float: right;
-    margin-top: -110px;
-    margin-right: 20px;}
+    margin-top: -130px;
+    margin-right: 30px;
+  font-size: 45px;}
   /*--------------------------Style menu des differentes cartes de restaurant--------------------
   -------------------------------------------------------------------------------------------------------
   -------------------------------------------------------------------------------------------*/
