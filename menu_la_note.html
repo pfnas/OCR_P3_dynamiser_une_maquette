@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>La note Enchantée</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="style.css">
@@ -12,7 +12,6 @@
 <body>
     <header>
         <div class="menu_part">
-            
             <div class="container first_container">
                 <div class="logo_header"><!--titre ou image à determiner-->
                     <a href="index.html"><i class="fa-solid fa-arrow-left"></i></a>
@@ -20,92 +19,122 @@
                 </div>
                 <img src="images/restaurants/la_note_enchantée.jpg" alt="plat">
             </div>
+        </div>
     </header>
     <div class="main">
         <div class="container second_container">
             <h1>La note enchantée</h1>
-            <table><tr>Entrées</tr>
+            <table>
+                <thead>
+                    <tr>Entrées</tr>
+                </thead>
             </table>
             <table>
-                <tr>
-                    <td colspan="2">Ravioles de foie gras</td>
-                </tr> 
-                <tr>
-                    <td>Accompagnés de leur crème à la truffe</td>
-                    <td>25€</td>
-                </tr>
-                <tr>
-                    <td>Caviar osciètre</td>
-                </tr> 
-                <tr>
-                    <td>Sur blini à la farine de blé noir</td>
+                <tbody class="first_starter">
+                    <tr>
+                        <td colspan="2">Ravioles de foie gras</td>
+                    </tr> 
+                    <tr >
+                        <td>Accompagnés de leur crème à la truffe</td>
+                        <td>25€</td>
+                    </tr>
+                </tbody>
+                <tbody class="second_starter">
+                    <tr>
+                        <td>Caviar osciètre</td>
+                    </tr> 
+                    <tr >
+                        <td>Sur blini à la farine de blé noir</td>
+                        <td>35€</td>
+                    </tr>
+                </tbody>
+                <tbody class="third_starter">
+                    <tr>
+                        <td>Homard et espuma de potiron</td>
+                    </tr>
+                    <tr>
+                        <td>Mariné aux zestes d'orange</td>
+                        <td>20€</td>
+                    </tr>
+                </tbody>
+                <tbody class="fourth_starter">
+                    <tr>
+                        <td>Foie gras de canard cuit entier</td>
+                    </tr>
+                    <tr>
+                        <td>Confiture de figue et pain toasté</td>
                     <td>35€</td>
-                </tr>
-                <tr>
-                    <td>Homard et espuma de potiron</td>
-                </tr>
-                <tr>
-                    <td>Mariné aux zestes d'orange</td>
-                    <td>20€</td>
-                </tr>
-                <tr>
-                    <td>Foie gras de canard cuit entier</td>
-                </tr>
-                <tr>
-                    <td>Confiture de figue et pain toasté</td>
-                    <td>35€</td>
-                </tr>
+                    </tr>
+                </tbody>
             </table>
             <table>        
                 <tr>
                     <td colspan="2">Plats</td>
                 </tr>
-                <tr>
-                    <td>Noix de coquilles Saint-Jacques</td>
-                </tr>
-                <tr>
-                    <td>Sur lit de purée de céleri-rave</td>
+                <tbody class="first_main">
+                    <tr>
+                        <td>Noix de coquilles Saint-Jacques</td>
+                    </tr>
+                    <tr>
+                        <td>Sur lit de purée de céleri-rave</td>
                     <td>40€</td>
                 </tr>
-                <tr>
-                    <td>Langoustine poêlée</td>
-                </tr>
-                <tr>
-                    <td>Purée de patate douce</td>
-                    <td>35€</tr>
-                <tr>
-                    <td>Mijoté de queue de boeuf</td>
-                </tr> 
-                <tr>
-                    <td>Et riz sauvage aux zestes de citron</td>
-                    <td>44€</tr>
+                </tbody>
+                <tbody>
+                    <tr class="second_main">
+                        <td>Langoustine poêlée</td>
+                    </tr>
+                    <tr class="third_main">
+                        <td>Purée de patate douce</td>
+                        <td>35€</td>
+                    </tr>
+                <tbody class="fourth_main">
+                    <tr>
+                        <td>Mijoté de queue de boeuf</td>
+                    </tr> 
+                    <tr>
+                        <td>Et riz sauvage aux zestes de citron</td>
+                        <td>44€</td>
+                    </tr>
+                </tbody>
             </table>
             <table>
                 <tr>
                     <td colspan="2">Desserts</td>
                 </tr>
-                <tr>
-                    <td>Macaron noisette et chocolat</td></tr>
-                <tr>
-                    <td>Glace au caramel brun et sel de Guérande</td>
-                    <td>18€</td>
-                </tr>
-                <tr>
-                    <td>Baba au rhum revisité</td>
-                </tr> 
-                <tr>
-                    <td>Avec son coulis de citron</td>
+                <tbody class="first_dessert">
+                    <tr>
+                        <td>Macaron noisette et chocolat</td>
+                    </tr>
+                    <tr>
+                        <td>Glace au caramel brun et sel de Guérande</td>
+                        <td>18€</td>
+                    </tr>
+                </tbody>
+                <tbody class="second_dessert">
+                    <tr>
+                        <td>Baba au rhum revisité</td>
+                    </tr> 
+                    <tr>
+                        <td>Avec son coulis de citron</td>
                     <td>22€</td>
-                </tr>
-                <tr>
-                    <td>Tarte au citron meringuée</td>
-                </tr> 
-                <tr>
-                    <td>Déstructurée</td>
-                    <td>23€</td>
-                </tr>
+                    </tr>
+                </tbody>
+                <tbody class="third_dessert">
+                    <tr>
+                        <td>Tarte au citron meringuée</td>
+                    </tr> 
+                    <tr>
+                        <td>Déstructurée</td>
+                        <td>23€</td>
+                    </tr>
+                </tbody>
             </table>
+            <button class="btn btn_commande">
+                Commander
+            </button>
         </div>
+    </div>  
         <footer>
             <div class="container third_container">
                 <div class="logo_footer"><img src="images/logo/ohmyfood.png" alt="logo_restaurant"></div>
@@ -117,6 +146,6 @@
                 </ul>
             </div>
         </footer>
-    </div>   
+     
 </body>
 </html>

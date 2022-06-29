@@ -350,27 +350,35 @@
   /*-------------------------------------MOBILE FIRST-----------------------------------
   ----------------------------------------------------------------------------------------
   --------------------------------------------------------------------------------------*/
+*{
+  box-sizing: border-box;
+}
 html
 {
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 0 ;
+  padding: 0 ;
   max-width: 768px;}/*taille moyenne d'un mobile*/ 
 body{
   width: 100%;
   display: flex;
   flex-direction: column;
   font-family: Roboto, "Sans serif";
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-font-size: 24px;}
+  font-size: 24px;}
+  img
+  {object-fit: cover;
+  width: 100%;}
 button
-{display: inline-block;}
+{
+  display: inline-block;}
 .container
-{background-color: rgb(234, 234, 234);}
+{
+  background-color: rgb(234, 234, 234);}
 
 .fonctionnement
-{background-color: #fff;}
+{
+  background-color: #fff;}
 li
 {
     list-style-type: none;}
@@ -383,27 +391,29 @@ ul
   border-radius: 50px;
   font-size: 24px;
   margin-bottom: 50px;
-  padding: 15px 75px;
+  padding: 25px 40px;
   color: white;
   white-space: nowrap;}
+  .store
+  {color: #9356DC}
+  
 
 h1, h2, h3
 {
   font-size: 30px;}
   h2, h3
-  {text-align: left;}
+  {
+    text-align: left;}
   a 
 {
   text-decoration: none;
-  color: black;}
+  color: black;
+}
 .restaurant_presentation
 {
-  object-fit: cover;
+  
   width: 100%;
-  border-radius: 25px 25px 0px 0px;
-  margin: 0 5px 0 5px;}
-
-
+  border-radius: 25px 25px 0px 0px;}
 .localisation
 {
   background-color: rgb(234, 234, 234);
@@ -412,23 +422,24 @@ h1, h2, h3
   align-items: center;
 }
  .btn_recherche a
-{color: white}
+{
+  color: white}
 header .container
 {
   text-align: center;
-  
   display: flex;
   flex-direction: column;}
 .logo_header
 {
   padding: 30px;
-text-align: center;}
+  text-align: center;}
 .logo_header img
 {
   width: 40%;}
 .localisation
 {
-  background-color: rgb(234, 234, 234);}
+  background-color: rgb(234, 234, 234);
+  display: inline-block;}
 .reservation
 {
   background-color: rgb(246, 246, 246);}
@@ -448,16 +459,13 @@ p.numerotation
 {
   background-color: rgb(246, 246, 246);
   width: 75%;
-  padding: 20px 35px;
-  border-radius: 25px;
+  padding: 30px 35px;
+  border-radius: 30px;
   border: none;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-}
+  box-shadow: 0px 5px 13px 0px #B1AAAA;}
   .restaurant
-  {margin-bottom: 10px;}
+  {
+    margin-bottom: 10px;}
   .number
  {
     padding-left: 8px;
@@ -470,32 +478,50 @@ p.numerotation
   }
   .card_restaurant
   {
-  background-color: #fff;
-  border-radius: 25px;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  -ms-border-radius: 25px;
-  -o-border-radius: 25px;
-}
+    background-color: #fff;
+    border-radius: 25px;}
   .card_text_item
-  {float: right;
-  margin-top: -110px;
-margin-right: 20px;}
+  {
+    float: right;
+    margin-top: -110px;
+    margin-right: 20px;}
   /*--------------------------Style menu des differentes cartes de restaurant--------------------
   -------------------------------------------------------------------------------------------------------
   -------------------------------------------------------------------------------------------*/
 
-.first_starter, .second_starter, .third_starter, .first_main, .second_main, .third_main, .first_dessert, .second_dessert, .third_dessert
-{ border-radius: 3px solid red; border-collapse: collapse; background-color: red; -webkit-border-radius: 3px solid red; -moz-border-radius: 3px solid red; -ms-border-radius: 3px solid red; -o-border-radius: 3px solid red;
+.first_starter, .second_starter, .third_starter, .fourth_starter, .first_main, .second_main,
+ .third_main, .fourth_main, .first_dessert, .second_dessert, .third_dessert
+{ 
+  border-radius: 3px solid red;
+  border-collapse: collapse;
+  background-color: red; 
+  -webkit-border-radius: 3px solid red;
+  -moz-border-radius: 3px solid red; 
+  -ms-border-radius: 3px solid red;
+  -o-border-radius: 3px solid red;
 }
 table
-{background-color: #fff;}
+{
+  background-color: #fff;}
+  .starter
+  {
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
 
+
+ 
 
 /*-----------------------------------footer---------------------------------------*/
 .third_container{
-    width: 100%;
-    background-color: black;}
+  width: 100%;
+  background-color: black;
+  padding-left: 30px;
+padding-bottom: 1px;}
 footer img
 {
   width: 30%;
@@ -505,5 +531,5 @@ footer img
 footer a, footer ul li
 {
   color: #fff;
-line-height: 1.6;}
+  line-height: 1.6;}
 
