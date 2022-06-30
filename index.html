@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!--lien vers cdnj bbibliotheque icones-->
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
@@ -13,8 +13,8 @@
     <body>
         <header>
             <section class="container first_container">
-                <div class="logo_header"><!--titre ou image à determiner-->
-                    <img src="images/logo/ohmyfood.png" alt="logo">
+                <div class="logo_header">
+                    <a href="#"><img src="images/logo/ohmyfood.png" alt="logo"></a>
                 </div>
                 <div class="localisation">
                     <span class="icone icone_localisation"><i class="fa-solid fa-location-dot"></i></span>
@@ -23,7 +23,6 @@
                 <div class="reservation">
                     <h1>Réservez le menu qui vous convient</h1>
                     <div class="menu_reservation">
-                        
                         <p class="information">Découvrez des restaurants d'exception,<br> selectionnés par nos soins.</p>
                         <a href="#"><button class="btn btn_recherche">Explorer nos restaurants</button></a>
                     </div>
@@ -77,7 +76,8 @@
                             <div class="card_text_item">
                                 <span class="clic_item"><i class="fa-regular fa-heart"></i></span>
                             </div>
-                        </a> 
+                        </a>
+                        <p class="label_palette">Nouveau</p>
                     </div>       
                     <div class="card_restaurant">
                         <a href="menu_la_note.html">
@@ -90,6 +90,7 @@
                                 <span class="clic_item"><i class="fa-regular fa-heart"></i></span>
                             </div>
                         </a>
+                        <p class="label_note">Nouveau</p>
                     </div>
                     <div class="card_restaurant">
                         <a href="menu_la_francaise.html">
@@ -122,10 +123,20 @@
             <div class="container third_container">
                 <div class="logo_footer"><img src="images/logo/ohmyfood.png" alt="logo_restaurant"></div>
                 <ul>
-                    <li class ="proposition"><span class="item_partner"><i class="fa-solid fa-utensils"></i></span><a href="#">Proposer un restaurant</a></li>
-                    <li class="icone"><span class="item_partner"><i class="fa-solid fa-handshake-angle"></i></span><a href="#">Devenir partenaire</a></li>
-                    <li class="légale"><a href="#">Mentions légales</a></li>
-                    <li class="contact"><a href="#">Contact</a></li>
+                    <li class ="proposition">
+                        <a href="#"><span class="icone icone_partner"><i class="fa-solid fa-utensils"></i></span>
+                        <span class="partner">Proposer un restaurant</span></a>
+                    </li>
+                    <li class="icone">
+                        <a href="#"><span class="icone icone_partner"><i class="fa-solid fa-handshake-angle"></i></span>
+                        <span class="partner">Devenir partenaire</span></a>
+                    </li>
+                    <li class="légale">
+                        <a href="#">Mentions légales</a>
+                    </li>
+                    <li class="contact">
+                        <a href="#">Contact</a>
+                    </li>
                 </ul>
             </div>
         </footer>

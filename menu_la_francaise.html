@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>A la Française</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!--lien vers cdnj bbibliotheque icones-->
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
+    <!--lien vers cdnj bbibliotheque icones-->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;600&family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="CSS/style.css">
     <!--rajouter chemin vers feuille de style-->
 </head>
 <body>
@@ -25,127 +24,112 @@
         <img src="images/restaurants/a_la_francaise.jpg" alt="plat">
     </header>
     <div class="main">
-        <div class="container second_container">
-            <h1>À la française</h1>
-            <h2>Entrées</h2>
-            <table>
-                <tbody class="first_starter">
-                    <tr>
-                        <td colspan="2">Tartare de poulpe acidulé</td>
-                    </tr>
-                    <tr>
-                        <td>Aux zestes d'orange</td>
-                        <td class="price">25€</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <tbody class="second_starter">
-                    <tr>
-                        <td colspan="2">Velouté de légumes d'antan</td>
-                    </tr>
-                    <tr>
-                        <td>Carotte, panais, topinambour</td>
-                        <td class="price">35€</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <tbody class="third_starter">
-                    <tr>
-                        <td colspan="2">Soupe à l'oignon</td>
-                    </tr>
-                    <tr>
-                        <td>Revisitée</td>
-                        <td class="price">20€</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h2>Plats</h2>
-            <table>                   
-                <tbody class="first_main">
-                    <tr>
-                        <td colspan="2">Coquilles Saint-Jacques</td>
-                    </tr>
-                    <tr>
-                        <td>Accompagnées d'une purée de panais</td>
-                        <td class="price">40€</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <tbody class="second_main">
-                    <tr>
-                        <td colspan="2">Magret de canard</td>
-                    </tr>
-                    <tr>
-                        <td>Et parmentier de pommes de terre</td>
-                        <td class="price">35€</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <tbody class="third_main">
-                    <tr>
-                        <td colspan="2">Pigeonneau d’Ille-et-Vilaine</td>
-                    </tr>
-                    <tr>
-                        <td>Sur son lit de gnocchis aux légumes</td>
-                        <td class="price">44€</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h2>Desserts</h2> 
-            <table>                    
-                <tbody class="first_dessert">
-                    <tr>
-                        <td colspan="2">Pétales de violettes glacés</td>
-                    </tr>
-                    <tr>
-                        <td>Et purée de noisettes</td>
-                        <td class="price">18€</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <tbody class="second_dessert">
-                    <tr>
-                        <td colspan="2">Fondant au chocolat</td>
-                    </tr>
-                    <tr>
-                        <td>Revisité</td>
-                        <td class="price">22€</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table>
-                <tbody class="third_dessert">
-                    <tr>
-                        <td colspan="2">Millefeuille croustillant</td>
-                    </tr>
-                    <tr>
-                        <td>Myrtilles et pâte d’amande</td>
-                        <td class="price">23€</td>
-                    </tr>
-                </tbody>
-            </table>
-            <button class="btn btn_commande">
-                Commander
-            </button>
-        </div>
-    </div>
-        
-        <footer>
-            <div class="container third_container">
-                <div class="logo_footer"><img src="images/logo/ohmyfood.png" alt="logo_restaurant"></div>
-                <ul>
-                    <li class ="proposition"><span class="item_partner"><i class="fa-solid fa-utensils"></i></span><a href="#">Proposer un restaurant</a></li>
-                    <li class="icone"><span class="item_partner"><i class="fa-solid fa-handshake-angle"></i></span><a href="#">Devenir partenaire</a></li>
-                    <li class="légale"><a href="#">Mentions légales</a></li>
-                    <li class="contact"><a href="#">Contact</a></li>
-                </ul>
+        <section class="header header_starter">
+            <div class="title_restaurant">
+                <h1>À la française</h1>
+                <div class="card_text_item">
+                    <span class="clic_item"><i class="fa-regular fa-heart"></i></span>
+                </div>
             </div>
-        </footer>
+            <h2>Entrées</h2>
+            <ul class="menu_restaurant">
+                <li class="top">Tartare de poulpe acidulé</li>
+                <li class="bottom">
+                    <span class="menu menu_starter">Aux zestes d'orange</span>
+                    <span class="price price_starter">25€</span>
+                </li>
+            </ul>
+            <ul class="menu_restaurant" >
+                <li class="top">Velouté de légumes d'antan</li>
+                <li class="bottom">
+                    <span class="menu menu_starter">Carotte, panais, topinambour</span>
+                    <span class="price price_starter">35€</span>
+                </li>
+            </ul>
+            <ul class="menu_restaurant">
+                <li class="top">Soupe à l'oignon</li>
+                <li class="bottom">
+                    <span class="menu menu_starter">Revisitée</span>
+                    <span class="price price_starter">20€</span>
+                </li>
+            </ul>
+        </section>
+        <section class="principal principal_main">
+            <h2>Plats</h2>
+            <ul class="menu_restaurant">
+                <li class="top">Coquilles Saint-Jacques</li>
+                <li class="bottom">
+                    <span class="menu menu_main">Accompagnées d'une purée de panais</span>
+                    <span class="price price_main">40€</span>
+                </li>
+            </ul>
+            <ul class="menu_restaurant">
+                <li class="top">Magret de canard</li>
+                <li class="bottom"><span class="menu menu_main"> parmentier de pommes de terre</span>
+                    <span class="price price_main">35€</span>
+                </li>
+            </ul>
+            <ul class="menu_restaurant">
+                <li class="top">Pigeonneau d’Ille-et-Vilaine</li>
+                <li class="bottom">
+                    <span class="menu menu_main">Sur son lit de gnocchis aux légumes</span>
+                    <span class="price price_main">44€</span>
+                </li>
+            </ul>   
+        </section>
+        <section class="footer footer_dessert">
+            <h2>Desserts</h2>
+            <ul class="menu_restaurant">
+                <li class="top">Pétales de violettes glacés</li>
+                <li class="bottom">
+                    <span class="menu menu_dessert"> Et purée de noisettes</span>
+                    <span class="price price_dessert">18€</span>
+                </li>
+            </ul>
+            <ul class="menu_restaurant">
+                <li class="top">Fondant au chocolat</li>
+                <li class="bottom">
+                    <span class="menu menu_dessert">Revisité</span>
+                    <span class="price price_main">22€</span>
+                </li>
+            </ul>
+            <ul class="menu_restaurant">
+                <li class="top">Millefeuille croustillant</li>
+                <li class="bottom">
+                    <span class="menu menu_dessert">Myrtilles et pâte d’amande</span>
+                    <span class="price price_main">23€</span>
+                </li>
+            </ul>
+            <div class="commande">
+                <button class="btn btn_commande">
+                    Commander
+                </button>
+            </div> 
+        </section>
+    </div>
+    <footer>
+        <div class="container third_container">
+            <div class="logo_footer"><img src="images/logo/ohmyfood.png" alt="logo_restaurant"></div>
+            <ul class="restaurant_menu">
+                <li class ="proposition">
+                    <a href="#">
+                        <span class="icone icone_partner"><i class="fa-solid fa-utensils"></i></span>
+                        <span class="partner">Proposer un restaurant</span>
+                    </a>
+                </li>
+                <li class="icone">
+                    <a href="#"><span class="icone icone_partner"><i class="fa-solid fa-handshake-angle"></i></span>
+                    <span class="partner">Devenir partenaire</span></a>
+                </li>
+                <li class="légale">
+                    <a href="#">Mentions légales</a>
+                </li>
+                <li class="contact">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     
 </body>
 </html>
