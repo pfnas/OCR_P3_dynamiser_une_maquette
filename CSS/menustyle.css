@@ -368,7 +368,8 @@ body
   padding: 0;
   font-size: 35px;}
   h1
-  {font-family: 'Shrikhand', cursive;}
+  {font-family: 'Shrikhand', cursive;
+  width: 77%;}
   footer h1
   {color: white;
   padding-top: 35px;}
@@ -376,7 +377,7 @@ body
 {
   object-fit: cover;
   width: 100%;
-  max-height: 327px;}
+  }
 button
 {
   display: inline-block;}
@@ -384,8 +385,12 @@ button
 {
   background-color: rgb(234, 234, 234);
   padding-bottom: 50px;
-  /*margin-top: -40px;*/
-  
+  margin-top: -210px;
+  border-radius: 35px 35px 0 0;
+  -webkit-border-radius: 35px 35px 0 0;
+  -moz-border-radius: 35px 35px 0 0;
+  -ms-border-radius: 35px 35px 0 0;
+  -o-border-radius: 35px 35px 0 0;
 }
   
 
@@ -539,15 +544,21 @@ p.numerotation
   .card_text_item
 {
   float: right;
-  margin-top: -175px;
-  margin-right: 45px;
+  width: 20%;
+  text-align: center;
   font-size: 45px;}
-  /*--------------------------Style menu des differentes cartes de restaurant--------------------
-  -------------------------------------------------------------------------------------------------------
-  -------------------------------------------------------------------------------------------*/
-.price, .menu
+  
+.price 
 {
-  display: inline-block;}
+  display: inline-block;
+  width: 20%;
+  text-align: end;
+font-weight: 400;}
+.menu
+{
+  display: inline-block;
+width: 75%;
+text-align: left;}
 .menu_restaurant
 { 
   background-color: #fff; border-radius:15px ;}
