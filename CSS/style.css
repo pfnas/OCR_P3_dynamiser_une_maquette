@@ -363,10 +363,15 @@ body
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-family: Roboto, "Sans serif";
+  font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
   font-size: 35px;}
+  h1
+  {font-family: 'Shrikhand', cursive;}
+  footer h1
+  {color: white;
+  padding-top: 35px;}
   img
 {
   object-fit: cover;
@@ -378,7 +383,15 @@ button
 .main
 {
   background-color: rgb(234, 234, 234);
-  padding-bottom: 50px;}
+  padding-bottom: 50px;
+  /*margin-top: -40px;*/
+  border-radius: 35px 35px 0 0;
+  -webkit-border-radius: 35px 35px 0 0;
+  -moz-border-radius: 35px 35px 0 0;
+  -ms-border-radius: 35px 35px 0 0;
+  -o-border-radius: 35px 35px 0 0;
+}
+  
 
 .fonctionnement, .logo_header
 {
@@ -404,7 +417,8 @@ ul
   .icone_store
   {
     color: #9356DC}
-  
+ header
+ {margin-bottom: 100px;} 
 
 h1, h2, h3
 {
@@ -483,6 +497,7 @@ header .container
 .reservation
 {
   background-color: rgb(246, 246, 246);}
+  
 .fonctionnemnt
 {
   background-color: green;}
@@ -550,7 +565,6 @@ p.numerotation
   border-radius: 30px;
   padding: 20px 0px 20px 20px;
   line-height: 1.6;
-  border: 2px solid black;
   margin-left: 15px;
   margin-right: 15px;
   -webkit-border-radius: 30px;
@@ -561,7 +575,7 @@ p.numerotation
   .bottom
 {
     font-weight: 300;
-    font-size: 30px;}
+    font-size: 25px;}
     .btn_commande
     {width: 50%;}
   .commande
