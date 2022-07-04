@@ -522,20 +522,25 @@ p.numerotation
 .restaurant
 {
   margin-bottom: 10px;}
-.number
-{
-  padding-left: 12px;
-  padding-right: 12px;
-  border-radius: 50%;
-  background-color: #9356DC;
-  color: white;
-  float: left;
-  margin-left: -54px;}
+
 .card_restaurant
 { 
   background-color: #fff;
   border-radius: 25px;
   margin: 0 15px;}
+  .number
+  {
+    padding: 0 12px;
+    border-radius: 50%;;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #9356DC;
+    color: white;
+    float: left;
+    margin-left: -54px;
+}
   .card_text_item
 {
   float: right;

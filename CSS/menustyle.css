@@ -430,6 +430,10 @@ h2, h3
   padding-left: 20px;}
   h2
   {font-family: 'Shrikhand', cursive;}
+  h3::after
+  {content:"";
+  width: 50%;}
+
 a 
 {
   text-decoration: none;
