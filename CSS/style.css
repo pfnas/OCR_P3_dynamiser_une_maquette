@@ -469,7 +469,7 @@ h2.presentation
   justify-content: space-evenly;
   align-items: center;}
 
- .btn_recherche a
+ .btn__recherche a
 {
   color: white}
 header .container
@@ -497,7 +497,7 @@ header .container
 .fonctionnemnt
 {
   background-color: green;}
-.button_menu ul li
+.button__menu ul li
 {
   margin-bottom: 45px;}
 
