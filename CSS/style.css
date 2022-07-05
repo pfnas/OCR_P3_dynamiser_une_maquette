@@ -410,9 +410,7 @@ ul
   -moz-border-radius: 80px;
   -ms-border-radius: 80px;
   -o-border-radius: 80px;}
-  .icone_store
-  {
-    color: #9356DC}
+  
  header
  {margin-bottom: 100px;} 
 
@@ -437,9 +435,7 @@ h2.presentation
   margin-top: 50px;}
 .icone, .name
 {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-block;
   font-weight: 400;}
 .restaurant_presentation
 {
@@ -508,7 +504,7 @@ p.numerotation
   padding: Opx 10px;}
 .btn_menu_choice
 {
-  background-color: rgb(246, 246, 246);
+  background-color: #f6f6f6;
   width: 85%;
   padding: 55px 35px;
   border-radius: 40px;
@@ -547,56 +543,31 @@ p.numerotation
   margin-top: -175px;
   margin-right: 45px;
   font-size: 45px;}
-  /*--------------------------Style menu des differentes cartes de restaurant--------------------
+  /*--------------------------animation/transition-------------------
   -------------------------------------------------------------------------------------------------------
   -------------------------------------------------------------------------------------------*/
-.price, .menu
+.btn_menu_choice
 {
-  display: inline-block;}
-.menu_restaurant
-{ 
-  background-color: #fff; border-radius:15px ;}
-.title_restaurant
-{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;} 
-.menu_restaurant {
-  background-color: #fff;
-  border-radius: 30px;
-  padding: 20px 0px 20px 20px;
-  line-height: 1.6;
-  margin-left: 15px;
-  margin-right: 15px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
-} 
-  .bottom
-{
-    font-weight: 300;
-    font-size: 25px;}
-    .btn_commande
-    {width: 50%;}
-  .commande
-{display:flex;
-justify-content: center;}
-
- 
+  background-color: #f6f6f6;
+  transition: 1s linear;
+  -webkit-transition: 1s linear;
+  -moz-transition: 1s linear;
+  -ms-transition: 1s linear;
+  -o-transition: 1s linear;
+}
+.btn_menu_choice:hover
+{ background-color: #FF77DA;}
+.icone
 
 /*-----------------------------------footer---------------------------------------*/
+footer
+{background-color: #000;}
 .third_container{
   width: 100%;
-  background-color: black;
+  background-color: #000;
   padding-left: 30px;
   padding-bottom: 1px;}
-footer img
-{
-  width: 30%;
-  height: auto;
-  padding-top: 35px;
-  filter: invert(100%)}
+
 footer a, footer ul li
 {
   color: #fff;
