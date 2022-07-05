@@ -565,9 +565,7 @@ font-weight: 400;}
   display: inline-block;
 width: 75%;
 text-align: left;}
-.menu_restaurant
-{ 
-  background-color: #fff; border-radius:15px ;}
+
 .title_restaurant
 {
   display: flex;
@@ -576,10 +574,10 @@ text-align: left;}
 .menu_restaurant {
   background-color: #fff;
   border-radius: 30px;
-  padding: 20px 0px 20px 20px;
   line-height: 1.6;
   margin-left: 15px;
   margin-right: 15px;
+  margin-bottom: 50px;
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
@@ -595,9 +593,17 @@ text-align: left;}
 {display:flex;
 justify-content: center;}
 
+
  
 
 /*-----------------------------------footer---------------------------------------*/
+p
+{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+}
 .third_container{
   width: 100%;
   background-color: black;
@@ -620,4 +626,73 @@ footer a, footer ul li
 {
   padding-left: 0;
   font-size: 21px;}
-
+  /*---------------------test animation transition------------------------*/
+  
+  .menu_restaurant {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+    display: flex;
+    overflow: hidden;
+    max-width: 100%;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+  .menu_restaurant:hover .cursor {
+    margin-right: 0;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+  }
+  .menu_restaurant:hover i {
+    transform: rotate(360deg);
+    transition-duration: 0.5s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+  }
+  .slider {
+    width: 100%;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .left{
+    width: 100%;
+    margin-left: 15px;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .right {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+    margin-right: 15px;
+      max-width: 100%;
+  }
+  
+  .cursor {
+    width: 250px;
+    background: #99e2d0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -250px;/*rem-7rem*/
+    transition: 0.5s ease;
+    
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+  }
+  .cursor i {
+    color: #99e2d0;
+    padding: 8px;/*0.5rem*/
+    border-radius: 50%;
+    background: white;
+    transition-duration: 0.5s;
+  }
