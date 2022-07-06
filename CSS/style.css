@@ -436,7 +436,12 @@ h2.presentation
 .icone, .name
 {
   display: inline-block;
-  font-weight: 400;}
+  font-weight: 400;
+  text-align: left;}
+.icone
+{width: 50%;}
+.name
+{width: 50%;}
 .restaurant_presentation
 {
   position:relative;
@@ -501,7 +506,7 @@ p.numerotation
 {
   display: inline-block;
   background-color: #9356DC;
-  padding: Opx 10px;}
+  padding: 0px 10px;}
 .btn_menu_choice
 {
   background-color: #f6f6f6;
@@ -557,7 +562,17 @@ p.numerotation
 }
 .btn_menu_choice:hover
 { background-color: #FF77DA;}
-.icone
+.icone_choice
+{
+  color: #000;
+  transition: 1s linear;
+  -webkit-transition: 1s linear;
+  -moz-transition: 1s linear;
+  -ms-transition: 1s linear;
+  -o-transition: 1s linear;
+}
+.btn_menu_choice:hover i{
+  color: #9356DC;}
 
 /*-----------------------------------footer---------------------------------------*/
 footer
