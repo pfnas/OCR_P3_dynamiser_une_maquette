@@ -421,15 +421,15 @@ ul
  header
  {margin-bottom: 100px;} 
 
-h1, h2, h3
-{
-  font-size: 45px;}
+
 h2, h3
 {
   text-align: left;
   padding-left: 20px;}
   h2
   {font-family: 'Shrikhand', cursive;}
+  h4
+  {font-weight: 900;}
   h3::after
   {content:"";
   width: 50%;}
@@ -464,14 +464,7 @@ h2.presentation
   background-color: rgb(153, 226, 207);
   color: rgb(22, 137, 108);
   padding: 10px 20px;}
-  .label_palette
-  {
-    top: 2px;
-    right: 62px;}
-  .label_note
-  {
-    top: 570px;
-    right: 62px;}
+  
 
 .localisation
 {
