@@ -427,11 +427,16 @@ a
 {
   text-decoration: none;
   color: black;}
+  input
+  {border: none;
+  background-color: #eaeaea;}
+  label i
+  {padding: 16px;}
 .information
 {
   font-weight: 300;
   padding-left: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   margin: 0}
 h2.presentation
 {
@@ -478,19 +483,22 @@ header .container
 .logo_header
 {
   padding: 30px 0 18px 0;
-  text-align: center;}
+  text-align: center;
+  box-shadow: 0px 5px 13px 0px #B1AAAA;}
 .logo_header img
 {
-  width: 40%;}
+  width: 35%;}
 .localisation
 {
   background-color: rgb(234, 234, 234);
   display: flex;
   border-top: 2px solid #d4d4d4;
-  padding: 24px 0 20px 0;}
+  padding: 20px 0;}
 .reservation
 {
   background-color: rgb(246, 246, 246);}
+  .reservation h2
+  {padding:  50px 0 20px 0;}
   
 .fonctionnemnt
 {
@@ -525,7 +533,7 @@ p.numerotation
 { 
   background-color: #fff;
   border-radius: 25px;
-  margin: 0 15px;
+  margin:  15px 20px 20px 20px;
   position: relative;}
   .number
   {
@@ -543,34 +551,32 @@ p.numerotation
   .card_text_item
 {
   float: right;
-  margin-top: -140px;
+  margin-top: -115px;
   margin-right: 25px;
   font-size: 45px;}
+  .card_restaurant h3
+  {padding: 25px 0px 15px 15px}
+  .proposition:nth-child(2)
+  {padding-left: 31px;}
   /*--------------------------animation/transition-------------------
   -------------------------------------------------------------------------------------------------------
   -------------------------------------------------------------------------------------------*/
-.btn_menu_choice
-{
-  background-color: #f6f6f6;
-  transition: 1s linear;
-  -webkit-transition: 1s linear;
-  -moz-transition: 1s linear;
-  -ms-transition: 1s linear;
-  -o-transition: 1s linear;
-}
-.btn_menu_choice:hover
-{ background-color: #FF77DA;}
 .icone_choice
 {
-  color: #000;
-  transition: 1s linear;
-  -webkit-transition: 1s linear;
-  -moz-transition: 1s linear;
-  -ms-transition: 1s linear;
-  -o-transition: 1s linear;
+  background-color: #f6f6f6;
+  transition: 0.1s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  -moz-transition: 0.1s ease-in-out;
+  -ms-transition: 0.1s ease-in-out;
+  -o-transition: 0.1s ease-in-out;
 }
-.btn_menu_choice:hover i{
-  color: #9356DC;}
+
+.btn_menu_choice:hover .icone_choice
+{
+  color: #9356DC;
+  
+}
+
 
 /*-----------------------------------footer---------------------------------------*/
 footer
@@ -594,4 +600,5 @@ footer a, footer ul li
 {
   padding-left: 0;
   font-size: 21px;}
+  
 

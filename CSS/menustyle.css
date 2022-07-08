@@ -352,6 +352,8 @@
   --------------------------------------------------------------------------------------*/
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html
 {
@@ -366,17 +368,26 @@ body
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 35px;}
+  font-size: 1rem;}
+  
   h1
   {font-family: 'Shrikhand', cursive;
-  width: 77%;}
-  footer h1
-  {color: white;
+  width: 77%;
+  margin: 0;
+}
+h1, h2
+{
+  font-size: 24px;}
+footer h1
+{
+  color: white;
   padding-top: 35px;}
-  img
+img
 {
   object-fit: cover;
   width: 100%;
+  height: 280px;/*redimensionnement des photos*/
+
   }
 button
 {
@@ -385,7 +396,7 @@ button
 {
   background-color: rgb(234, 234, 234);
   padding-bottom: 50px;
-  margin-top: -210px;
+  margin-top: -135px;
   border-radius: 35px 35px 0 0;
   -webkit-border-radius: 35px 35px 0 0;
   -moz-border-radius: 35px 35px 0 0;
@@ -409,7 +420,7 @@ ul
   background: linear-gradient(to top, #9356DC, #FF77DA);
   border-radius: 80px;
   margin-bottom: 50px;
-  padding: 35px 90px;
+  padding: 22px 51px;
   color: white;
   -webkit-border-radius: 80px;
   -moz-border-radius: 80px;
@@ -429,10 +440,24 @@ h2, h3
   h2
   {font-family: 'Shrikhand', cursive;}
   h4
-  {font-weight: 900;}
-  h3::after
-  {content:"";
-  width: 50%;}
+  {font-weight: 900;
+  font-size: 1rem;
+padding-bottom: 14px;}
+  h3
+  {font-size: 18px;
+  margin: 0}
+  .title_decoration
+  {position:relative;}
+  .title_decoration h3::after
+  {
+    content:"";
+    background-color: #99e2d0;
+    width: 40px;
+    height: 2px;
+    display:inline-block;
+    position: absolute;
+    left: 20px;
+    top: 22px;}
 
 a 
 {
@@ -489,9 +514,9 @@ header .container
     width: 100%;}
   .logo_header
 {
-  padding: 30px 0 10px 0;
+  padding: 16px 0 16px 0;
   display: flex;
-align-items: center;}
+  align-items: center;}
 .logo_header img
 {
   width: 40%;}
@@ -545,7 +570,8 @@ align-items: center;}
   float: right;
   width: 20%;
   text-align: center;
-  font-size: 45px;}
+  font-size: 21px;
+padding-right: 8px;}
   
 .price 
 {
@@ -564,6 +590,14 @@ text-align: left;}
   display: flex;
   justify-content: space-between;
   align-items: center;} 
+  .title_restaurant h2
+  {
+    padding: 45px 0;
+    padding-left: 20px;
+  margin: 0}
+  .header_starter h3
+  {
+    padding-bottom: 24px;}
 .menu_restaurant {
   background-color: #fff;
   border-radius: 30px;
@@ -619,6 +653,7 @@ footer a, footer ul li
 {
   padding-left: 0;
   font-size: 21px;}
+ 
   /*---------------------test animation transition------------------------*/
   
   .menu_restaurant {
@@ -649,6 +684,7 @@ footer a, footer ul li
     -o-transform: rotate(360deg);
   }
   .slider {
+    padding: 20px 0;
     width: 100%;
     display: flex;
     max-width: 100%;
@@ -669,12 +705,12 @@ footer a, footer ul li
   }
   
   .cursor {
-    width: 250px;
+    width: 200px;
     background: #99e2d0;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: -250px;
+    margin-right: -200px;
     transition: 0.5s ease;
     -webkit-transition: 0.5s ease;
     -moz-transition: 0.5s ease;
