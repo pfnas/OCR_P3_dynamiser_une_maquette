@@ -571,7 +571,7 @@ header .container
   width: 20%;
   text-align: center;
   font-size: 21px;
-padding-right: 8px;}
+}
   
 .price 
 {
@@ -699,8 +699,8 @@ footer a, footer ul li
   .right {
     display: flex;
     align-items: flex-end;
-    margin-bottom: 15px;
-    margin-right: 15px;
+    
+    padding-right: 30px;
       max-width: 100%;
   }
   
