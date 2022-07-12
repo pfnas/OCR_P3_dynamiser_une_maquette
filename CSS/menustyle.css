@@ -424,6 +424,7 @@ ul
   margin-bottom: 50px;
   padding: 22px 51px;
   color: white;
+  box-shadow: 1px, 1px, 9px, 5px #9356DC;
   -webkit-border-radius: 80px;
   -moz-border-radius: 80px;
   -ms-border-radius: 80px;
@@ -545,7 +546,7 @@ header .container
   padding: 55px 35px;
   border-radius: 40px;
   border: none;
-  box-shadow: 0px 5px 13px 0px #B1AAAA;
+  box-shadow: 0px 5px 13px 0px rgb(177, 170, 170);
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
@@ -645,9 +646,35 @@ text-align: left;}
 justify-content: center;}
 .menu_restaurant p
 {font-weight: 300;}
+/*--------------------------------apparition menus-----------------------------
+------------------------------------------------------------------------------*/
+.menu_list
+{
+  opacity: 1;
+  animation:appear 10s;
+  -webkit-animation:appear 10s;
+}
+@keyframes appear{
+  0%{opacity: 0;
+  }
+  100%{opacity: 1;}
+}
+
+.menu_list .starter_detail:nth-child(1)
+{ opacity: 1; animation:appear_menu 3s ease-in-out; -webkit-animation:appear_menu 3s ease-in-out;
+}
+.menu_list .starter_detail:nth-child(2)
+{ opacity: 1; animation:appear_menu 3s ease-in-out; -webkit-animation:appear_menu 3s ease-in-out; animation-delay: 3s;
+}
+.menu_list .starter_detail:nth-child(3)
+{ opacity:1; animation:appear_menu 3s ease-in-out; -webkit-animation:appear_menu 3s ease-in-out; animation-delay: 6s; }
+@keyframes appear_menu{
+  0%{opacity: 0;}
+  50%{opacity: 1;}
+  100%{opacity: 1;}
+}
 
 
- 
 
 /*-----------------------------------footer---------------------------------------*/
 p
