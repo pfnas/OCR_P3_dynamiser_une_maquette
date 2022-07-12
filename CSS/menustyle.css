@@ -381,7 +381,7 @@ h1, h2
 footer h1
 {
   color: white;
-  padding-top: 35px;}
+  }
 img
 {
   object-fit: cover;
@@ -396,7 +396,9 @@ button
 {
   background-color: rgb(234, 234, 234);
   padding-bottom: 50px;
-  margin-top: -135px;
+  margin-top: -30px;
+  /*position: relative;
+  z-index: 1;*/
   border-radius: 35px 35px 0 0;
   -webkit-border-radius: 35px 35px 0 0;
   -moz-border-radius: 35px 35px 0 0;
@@ -430,7 +432,7 @@ ul
   {
     color: #9356DC}
  header
- {margin-bottom: 100px;} 
+ {margin-bottom: 0px;} 
 
 
 h2, h3
@@ -448,16 +450,17 @@ padding-bottom: 14px;}
   margin: 0}
   .title_decoration
   {position:relative;}
-  .title_decoration h3::after
+  .title_decoration::after
   {
     content:"";
     background-color: #99e2d0;
     width: 40px;
-    height: 2px;
+    height: 4px;
     display:inline-block;
     position: absolute;
     left: 20px;
-    top: 22px;}
+    top: 22px;
+    }
 
 a 
 {
@@ -537,7 +540,7 @@ header .container
 
 .btn_menu_choice
 {
-  background-color: rgb(246, 246, 246);
+  background-color: #f6f6f6;
   width: 85%;
   padding: 55px 35px;
   border-radius: 40px;
@@ -571,7 +574,27 @@ header .container
   width: 20%;
   text-align: center;
   font-size: 21px;
+  position:relative;
+  top: 0px;
+  right: -90px;
 }
+.clic_solid, .clic_regular
+  { 
+    position: absolute;
+    right: 140px;
+    top: 0px;}
+    .clic_solid
+{
+   color: transparent;
+   transition-duration: 1s;
+   transition-property:transform;
+   transition-timing-function: ease-in;
+  
+}
+.clic_solid:hover
+{ color:  #9356DC ; transform: scale(1.3); -webkit-transform: scale(1.3); -moz-transform: scale(1.3); -ms-transform: scale(1.3); -o-transform: scale(1.3);
+}
+
   
 .price 
 {
@@ -599,6 +622,7 @@ text-align: left;}
   {
     padding-bottom: 24px;}
 .menu_restaurant {
+  white-space: nowrap;
   background-color: #fff;
   border-radius: 30px;
   line-height: 1.6;
@@ -619,6 +643,8 @@ text-align: left;}
   .commande
 {display:flex;
 justify-content: center;}
+.menu_restaurant p
+{font-weight: 300;}
 
 
  
@@ -635,7 +661,8 @@ p
   width: 100%;
   background-color: black;
   padding-left: 30px;
-  padding-bottom: 1px;}
+  padding-bottom: 35px;
+  padding-top: 35px;}
 footer img
 {
   width: 30%;
@@ -723,4 +750,39 @@ footer a, footer ul li
     border-radius: 50%;
     background: white;
     transition-duration: 0.5s;
+  }
+  /*--------------------------Test--------------------------------
+  -----------------------------------------------------------------*/
+ 
+  /*--------------------------------------------------------------*/
+  @media(min-width: 768px)
+  {
+    .menu_list
+    {display: flex;
+    flex-wrap: wrap;
+    justify-content: center;}
+    .starter_detail
+    {width: 45%;}
+    .logo_footer
+    {text-align: center;
+    padding-bottom: 20px;}
+    footer ul
+  {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-left: 0;
+  }
+  .third_container
+  {
+    padding: 35px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+   
+  }
+  @media(min-width: 992px)
+  {
+    .starter_detail
+    {width: 33%;}
   }
