@@ -677,8 +677,8 @@ p.numerotation
 
 /*................................animation chargement page......................*/
 body {
-  animation: fadein 3s linear;
-  -webkit-animation: fadein 3s linear;
+  animation: fadein 3s ease-in-out;
+  -webkit-animation: fadein 3s ease-in-out;
 }
  @keyframes fadein {
   0% {
@@ -717,7 +717,7 @@ body {
   padding: 0 100px;
   text-align: center;
   color:#9356DC;
-  font-size: 100px;
+  font-size: 50px;
   white-space: nowrap;
   box-shadow: 1px, 1px, 18px, 5px #9356DC;
 }
@@ -747,42 +747,49 @@ body {
   }
 }
 .loader_letter label:nth-child(8) {
-  -webkit-animation: welcome 3s 100ms ease-in-out;
-  animation: welcome 3s 100ms ease-in-out;
-  
+  -webkit-animation: welcome 5s 100ms ease-in-out;
+  animation: welcome 5s 100ms ease-in-out;
+  animation-iteration-count: 2;
 }
 .loader_letter label:nth-child(7) {
-  -webkit-animation: welcome 3s 200ms  ease-in-out;
-  animation: welcome 3s 200ms  ease-in-out;
+  -webkit-animation: welcome 5s 200ms  ease-in-out;
+  animation: welcome 5s 200ms  ease-in-out;
+  animation-iteration-count: 2;
 }
 .loader_letter label:nth-child(6) {
-  -webkit-animation: welcome 3s 300ms  ease-in-out;
-  animation: welcome 3s 300ms  ease-in-out;
+  -webkit-animation: welcome 5s 300ms  ease-in-out;
+  animation: welcome 5s 300ms  ease-in-out;
+  animation-iteration-count: 2;
 }
 
 .loader_letter  label:nth-child(5) {
-  -webkit-animation: welcome 3s 400ms  ease-in-out;
-  animation: welcome 3s 400ms  ease-in-out;
+  -webkit-animation: welcome s5s 400ms  ease-in-out;
+  animation: welcome 5s 400ms  ease-in-out;
+  animation-iteration-count: 2;
 }
 
 .loader_letter  label:nth-child(4) {
-  -webkit-animation: welcome 3s 500ms  ease-in-out;
-  animation: welcome 3s 500ms  ease-in-out;
+  -webkit-animation: welcome 5s 500ms  ease-in-out;
+  animation: welcome 5s 500ms  ease-in-out;
+  animation-iteration-count: 2;
 }
 
 .loader_letter  label:nth-child(3) {
-  -webkit-animation: welcome 3s 600ms  ease-in-out;
-  animation: welcome 3s 600ms  ease-in-out;
+  -webkit-animation: welcome 5s 600ms  ease-in-out;
+  animation: welcome 5s 600ms  ease-in-out;
+  animation-iteration-count: 2;
 }
 
 .loader_letter  label:nth-child(2) {
-  -webkit-animation: welcome 3s 700ms ease-in-out;
-  animation: welcome 3s 700ms ease-in-out;
+  -webkit-animation: welcome 5s 700ms ease-in-out;
+  animation: welcome 5s 700ms ease-in-out;
+  animation-iteration-count: 2;
 }
 
 .loader_letter  label:nth-child(1) {
-  -webkit-animation: welcome 3s 800ms  ease-in-out;
-  animation: welcome 3s 800ms  ease-in-out;
+  -webkit-animation: welcome 5s 800ms  ease-in-out;
+  animation: welcome 5s 800ms  ease-in-out;
+  animation-iteration-count: 2;
 }
 
 /*-----------------------------------footer---------------------------------------*/
