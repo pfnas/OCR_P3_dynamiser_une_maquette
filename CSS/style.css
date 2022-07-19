@@ -700,7 +700,7 @@ body {
 } 
 
 .loader_letter {
-  left: -860px;
+  left: -1000px;
   top: 50%;
   position: fixed;
   z-index: 999;
@@ -711,12 +711,12 @@ body {
   color:#9356DC;
   font-size: 60px;
   white-space: nowrap;
-  box-shadow: 1px, 1px, 18px, 5px #9356DC;
+  
 }
 
 .loader_letter label {
  
-  opacity:0;
+  opacity:1;
   display:inline-block;
 }
 
