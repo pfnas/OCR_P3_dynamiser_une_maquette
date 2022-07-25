@@ -635,7 +635,7 @@ cursor: pointer;
   cursor: pointer;}
 .btn_menu_choice:hover
 { transform: scale(1.1) ; -webkit-transform: scale(1.1) ; -moz-transform: scale(1.1) ; -ms-transform: scale(1.1) ; -o-transform: scale(1.1) ; 
-  background-color: rgba(246, 246, 246, 0.1);
+  background-color: rgba(255, 121, 218, .2) ;
   box-shadow: 0px 5px 13px 0px rgba(177, 170, 170, 1);
 cursor: pointer;}
 .loader/*---chargement loader*/
