@@ -458,7 +458,7 @@ padding-bottom: 14px;}
   {
     content:"";
     background-color: #99e2d0;
-    width: 40px/*10%*/;
+    width: 40px;
     height: 4px;
     display:inline-block;
     position: absolute;
@@ -523,6 +523,7 @@ cursor: pointer; }
 .btn_menu_choice:hover .icone_choice
 {
   color: rgba(147, 86, 220, 0.1);}
+  .btn:hover{background: linear-gradient(to top, rgba(147, 86, 220, 0.1), rgba(255, 119, 218, 1));}
 
 
 
@@ -595,7 +596,7 @@ cursor: pointer; }
 .clic_solid, .clic_regular
   { 
     position: absolute;
-    right: 140px;
+    right: 20px;
     top: 0px;}
     .clic_solid
 {
@@ -645,7 +646,11 @@ text-align: left;}
   -moz-border-radius: 30px;
   -ms-border-radius: 30px;
   -o-border-radius: 30px;
+  
 } 
+.menu_restaurant h4
+{text-transform: uppercase;
+  font-weight: 400;}
   .bottom
 {
     font-weight: 300;

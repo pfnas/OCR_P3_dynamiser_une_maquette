@@ -402,8 +402,8 @@ ul
 .btn 
 {
   
-  background: linear-gradient(to top, #9356DC, #FF77DA);
-  box-shadow: 1px 1px 5px 1px rgba(147, 86, 220);
+  background: linear-gradient(to top, rgba(147, 86, 220, 1), rgba(255, 119, 218, 1));
+  box-shadow: 1px 1px 5px 1px rgba(147, 86, 220, 1);
   border-radius: 80px;
   border: none;
  
@@ -413,6 +413,7 @@ ul
   -moz-border-radius: 80px;
   -ms-border-radius: 80px;
   -o-border-radius: 80px;}
+  .btn:hover{background: linear-gradient(to top, rgba(147, 86, 220, 0.8), rgba(255, 119, 218, 0.8));}
   
  header
  {margin-bottom: 60px;} 
@@ -616,7 +617,7 @@ cursor: pointer;
 
 }
 .icone_choice:hover
-{background-color:rgba(246, 246, 246, 0.7) ;}
+{background-color:rgba(246, 246, 246, 0) ;}
 .btn__recherche
 { transition: 0.3s transform linear ; -webkit-transition: 0.3s transform linear ; -moz-transition: 0.3s transform linear ; -ms-transition: 0.3s transform linear ; -o-transition: 0.3s transform linear ; }
 .btn__recherche:hover
@@ -625,14 +626,16 @@ cursor: pointer;
 .btn_menu_choice:hover .icone_choice
 {
   color: #9356DC;
-cursor: pointer;}
+  cursor: pointer;
+  background-color: rgba(246, 246, 246,.1);}
+
 
   .btn_menu_choice
   { transition: 0.3s transform linear; -webkit-transition: 0.3s transform linear; -moz-transition: 0.3s transform linear; -ms-transition: 0.3s transform linear; -o-transition: 0.3s transform linear; 
   cursor: pointer;}
 .btn_menu_choice:hover
 { transform: scale(1.1) ; -webkit-transform: scale(1.1) ; -moz-transform: scale(1.1) ; -ms-transform: scale(1.1) ; -o-transform: scale(1.1) ; 
-  background-color: rgba(246, 246, 246, 0.8);
+  background-color: rgba(246, 246, 246, 0.1);
   box-shadow: 0px 5px 13px 0px rgba(177, 170, 170, 1);
 cursor: pointer;}
 .loader/*---chargement loader*/
